@@ -9,3 +9,4 @@ FROM prom/prometheus
 #             "--web.console.libraries=/usr/share/prometheus/console_libraries", \
 #             "--web.console.templates=/usr/share/prometheus/consoles" ]
 #ENTRYPOINT [“bash”, “-c”, “chown nobody:nobody /etc/prometheus”]
+RUN rm -rf /prometheus/lock
